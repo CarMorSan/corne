@@ -355,10 +355,10 @@
 
         flechas_seleccion {
             bindings = <
-&trans  &trans        &kp LS(LC(LEFT))  &kp LS(UP_ARROW)  &kp LS(LC(RIGHT))  &trans         &trans    &kp LC(LEFT_ARROW)  &kp UP_ARROW  &kp LC(RIGHT)  &trans   &trans
-&trans  &kp LS(HOME)  &kp LS(LEFT)      &kp LS(DOWN)      &kp LS(RIGHT)      &kp LS(END)    &kp HOME  &kp LEFT            &kp DOWN      &kp RIGHT      &kp END  &trans
-&trans  &trans        &trans            &trans            &trans             &trans         &trans    &trans              &trans        &trans         &trans   &trans
-                                        &trans            &trans             &trans         &trans    &trans              &trans
+&trans  &trans        &kp LS(LC(LEFT))  &kp LS(UP_ARROW)  &kp LS(LC(RIGHT))  &trans         &kp LC(Y)  &kp LC(LEFT_ARROW)  &kp UP_ARROW  &kp LC(RIGHT)  &trans   &trans
+&trans  &kp LS(HOME)  &kp LS(LEFT)      &kp LS(DOWN)      &kp LS(RIGHT)      &kp LS(END)    &kp HOME   &kp LEFT            &kp DOWN      &kp RIGHT      &kp END  &trans
+&trans  &kp LC(Z)     &kp LC(X)         &kp LC(C)         &kp LC(V)          &trans         &kp LC(W)  &trans              &trans        &trans         &trans   &trans
+                                        &trans            &trans             &trans         &trans     &trans              &trans
             >;
         };
 
@@ -375,7 +375,7 @@
             bindings = <
 &kp F1             &kp F2               &kp F3                       &kp F4         &kp F5      &kp F6    &kp F7  &kp F8        &kp F9        &kp F10       &kp F11     &kp F12
 &kp C_VOLUME_UP    &kp LG(PRINTSCREEN)  &kp LC(LA(LG(PRINTSCREEN)))  &kp LG(LS(S))  &kp ESCAPE  &trans    &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &bt BT_CLR  &trans
-&kp C_VOLUME_DOWN  &kp C_MUTE           &trans                       &trans         &trans      &trans    &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans
+&kp C_VOLUME_DOWN  &kp C_MUTE           &trans                       &trans         &trans      &tog 6    &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans
                                                                      &trans         &trans      &trans    &trans  &trans        &trans
             >;
         };
@@ -395,6 +395,15 @@
 &abre_signo_interrogacion    &menor_que  &abre_corchetes    &abre_llaves      &abre_parentesis    &none                 &trans  &trans  &trans  &trans  &trans  &trans
 &abre_signo_exclamacion      &pico       &signo_pesos       &comillas_dobles  &comilla_simple     &comilla_invertida    &trans  &trans  &trans  &trans  &trans  &trans
                                                             &trans            &trans              &trans                &trans  &trans  &trans
+            >;
+        };
+
+        dvorak {
+            bindings = <
+&trans  &kp APOS  &kp COMMA  &kp DOT  &kp P   &kp Y     &kp F   &kp G   &kp C   &kp R  &kp L  &trans
+&trans  &kp A     &kp O      &kp E    &kp U   &kp I     &kp D   &kp H   &kp T   &kp N  &kp S  &trans
+&trans  &kp SEMI  &kp Q      &kp J    &kp K   &kp X     &kp B   &kp M   &kp W   &kp V  &kp Z  &trans
+                             &trans   &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
