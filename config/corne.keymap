@@ -375,7 +375,7 @@
             bindings = <
 &kp F1             &kp F2               &kp F3                       &kp F4         &kp F5      &kp F6    &kp F7  &kp F8        &kp F9        &kp F10       &kp F11     &kp F12
 &kp C_VOLUME_UP    &kp LG(PRINTSCREEN)  &kp LC(LA(LG(PRINTSCREEN)))  &kp LG(LS(S))  &kp ESCAPE  &trans    &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &bt BT_CLR  &trans
-&kp C_VOLUME_DOWN  &kp C_MUTE           &trans                       &trans         &trans      &to 6    &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans
+&kp C_VOLUME_DOWN  &kp C_MUTE           &trans                       &trans         &trans      &tog 6    &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans
                                                                      &trans         &trans      &trans    &trans  &trans        &trans
             >;
         };
@@ -400,10 +400,10 @@
 
         dvorak {
             bindings = <
-&trans  &kp APOS  &kp COMMA  &kp DOT  &kp P   &kp Y     &kp F   &kp G   &kp C   &kp H  &kp L  &trans
-&trans  &kp A     &kp O      &kp E    &kp U   &kp I     &kp D   &kp R   &kp T   &kp N  &kp S  &trans
-&trans  &kp SEMI  &kp Q      &kp J    &kp K   &kp X     &kp B   &kp M   &kp W   &kp V  &kp Z  &trans
-                             &trans   &trans  &trans    &trans  &trans  &trans
+&trans  &kp APOS  &kp COMMA  &kp DOT  &kp P    &kp Y          &kp F        &kp G    &kp C      &kp H  &kp L  &trans
+&trans  &kp A     &kp O      &kp E    &lt 4 U  &kp I          &kp D        &lt 5 R  &kp T      &kp N  &kp S  &trans
+&trans  &kp SEMI  &kp Q      &kp J    &kp K    &kp X          &kp B        &kp M    &kp W      &kp V  &kp Z  &trans
+                             &trans   &trans   &lt 1 SPACE    &lt 2 ENTER  &trans   &lt 3 DEL
             >;
         };
     };
