@@ -403,26 +403,6 @@
             label = "MINUSCULAS";
         };
 
-        busqueda_anterior: busqueda_anterior {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp RIGHT_SHIFT &kp F3>,
-                <&macro_release &kp LEFT_SHIFT &kp F3>;
-
-            label = "BUSQUEDA_ANTERIOR";
-        };
-
-        busqueda_siguiente: busqueda_siguiente {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = 
-                <&macro_press &kp F3>,
-                <&macro_release &kp F3>;
-
-            label = "BUSQUEDA_SIGUIENTE";
-        };
-
     };
 
     keymap {
@@ -439,9 +419,9 @@
 
         flechas_seleccion {
             bindings = <
-&trans       &trans        &kp LS(LC(LEFT))  &kp LS(UP_ARROW)  &kp LS(LC(RIGHT))  &kp LA(LEFT_SHIFT)    &kp LC(Y)      &kp LC(LEFT_ARROW)  &kp UP_ARROW  &kp LC(RIGHT)  &busqueda_anterior  &busqueda_siguiente
-&mayusculas  &kp LS(HOME)  &kp LS(LEFT)      &kp LS(DOWN)      &kp LS(RIGHT)      &kp LS(END)           &kp HOME       &kp LEFT            &kp DOWN      &kp RIGHT      &kp END             &trans
-&minusculas  &kp LC(Z)     &kp LC(X)         &kp LC(C)         &kp LC(V)          &kp LC(W)             &kp LC(LS(L))  &comentar           &descomentar  &contraer      &expandir           &trans
+&trans       &trans        &kp LS(LC(LEFT))  &kp LS(UP_ARROW)  &kp LS(LC(RIGHT))  &kp LA(LEFT_SHIFT)    &kp LC(Y)      &kp LC(LEFT_ARROW)  &kp UP_ARROW  &kp LC(RIGHT)  &kp LS(F3)  &kp F3
+&mayusculas  &kp LS(HOME)  &kp LS(LEFT)      &kp LS(DOWN)      &kp LS(RIGHT)      &kp LS(END)           &kp HOME       &kp LEFT            &kp DOWN      &kp RIGHT      &kp END     &trans
+&minusculas  &kp LC(Z)     &kp LC(X)         &kp LC(C)         &kp LC(V)          &kp LC(W)             &kp LC(LS(L))  &comentar           &descomentar  &contraer      &expandir   &trans
                                              &trans            &trans             &trans                &trans         &trans              &trans
             >;
         };
