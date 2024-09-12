@@ -416,7 +416,9 @@
         busqueda_siguiente: busqueda_siguiente {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp F3>;
+            bindings = 
+                <&macro_press &kp F3>,
+                <&macro_release &kp F3>;
 
             label = "BUSQUEDA_SIGUIENTE";
         };
