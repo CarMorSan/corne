@@ -445,22 +445,22 @@
         };
 
         signos_programacion_derecha {
-    bindings = <  
-        &trans  &trans  &trans  &trans  &trans  &trans  &u 0x0021  &u 0x2212  &u 0x005F  &u 0x0040  &u 0x007E  &u 0x0025  
-        &trans  &trans  &trans  &trans  &trans  &trans  &u 0x002B  &u 0x003D  &u 0x007C  &u 0x0026  &u 0x00F1  &none  
-        &trans  &trans  &trans  &trans  &trans  &trans  &u 0x002A  &u 0x0023  &u 0x003B  &u 0x003A  &u 0x002F  &u 0x005C  
-                                &trans  &trans  &trans  &trans  &trans  &trans  
-    >;  
-};  
+    bindings = <
+        &trans  &trans  &trans  &trans  &trans  &trans  &kp EXCL  &kp MINUS  &kp UNDER  &kp AT    &kp TILDE  &kp PERC
+        &trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS  &kp EQUAL  &kp PIPE   &kp AMPS  &kp N      &none
+        &trans  &trans  &trans  &trans  &trans  &trans  &kp STAR  &kp HASH   &kp SEMI   &kp COLON &kp SLASH  &kp BSLH
+                        &trans  &trans  &trans  &trans  &trans  &trans
+    >;
+};
 
 signos_programacion_izquierda {
-    bindings = <  
-        &u 0x003F  &u 0x003E  &u 0x005D  &u 0x007D  &u 0x0029  &none  &trans  &trans  &trans  &trans  &trans  &trans  
-        &u 0x00BF  &u 0x003C  &u 0x005B  &u 0x007B  &u 0x0028  &none  &trans  &trans  &trans  &trans  &trans  &trans  
-        &u 0x00A1  &u 0x005E  &u 0x0024  &u 0x0022  &u 0x0027  &u 0x0060  &trans  &trans  &trans  &trans  &trans  &trans  
-                                                    &trans  &trans  &trans  &trans  &trans  &trans  
-    >;  
-};  
+    bindings = <
+        &kp QUESTION  &kp GT     &kp RBRC  &kp RCBR  &kp RPAR  &none  &trans  &trans  &trans  &trans  &trans  &trans
+        &kp EXCLAIM   &kp LT     &kp LBRC  &kp LCBR  &kp LPAR  &none  &trans  &trans  &trans  &trans  &trans  &trans
+        &kp EXCLAIM   &kp CARET  &kp DOLL  &kp DQT   &kp SQT   &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans  &trans  &trans  &trans  &trans  &trans
+    >;
+};
         dvorak {
             bindings = <
 &trans  &kp APOS  &kp COMMA  &kp DOT  &kp P             &kp Y     &kp F   &kp G    &kp C   &kp H  &kp L  &trans
