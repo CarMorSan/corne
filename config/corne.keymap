@@ -446,19 +446,19 @@
 
         signos_programacion_derecha {
     bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans  &kp EXCL  &kp MINUS  &kp UNDER  &kp AT    &kp TILDE  &kp PERC
-        &trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS  &kp EQUAL  &kp PIPE   &kp AMPS  &kp N      &none
-        &trans  &trans  &trans  &trans  &trans  &trans  &kp STAR  &kp HASH   &kp SEMI   &kp COLON &kp SLASH  &kp BSLH
-                        &trans  &trans  &trans  &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans &kp EXCL &kp MINUS &kp UNDER &kp AT &kp TILDE &kp PERC
+        &trans &trans &trans &trans &trans &trans &kp PLUS &kp EQUAL &kp PIPE &kp AMPERSAND &kp ENIE &none
+        &trans &trans &trans &trans &trans &trans &kp ASTERISK &kp NUMERAL &kp SCOLON &kp COLON &kp SLASH &kp BACKSLASH
+        &trans &trans &trans &trans &trans &trans
     >;
 };
 
 signos_programacion_izquierda {
     bindings = <
-        &kp QUESTION  &kp GT     &kp RBRC  &kp RCBR  &kp RPAR  &none  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp EXCLAIM   &kp LT     &kp LBRC  &kp LCBR  &kp LPAR  &none  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp EXCLAIM   &kp CARET  &kp DOLL  &kp DQT   &kp SQT   &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans  &trans  &trans  &trans  &trans  &trans
+        &kp QUES &kp GREATER &kp RBRC &kp RBRACE &kp RPAREN &none &trans &trans &trans &trans &trans &trans
+        &kp EXCL &kp LESS &kp LBRC &kp LBRACE &kp LPAREN &none &trans &trans &trans &trans &trans &trans
+        &kp TILDE &kp CARET &kp DOLLAR &kp DBLQUOT &kp SINGQUOT &kp GRAVE &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans
     >;
 };
         dvorak {
