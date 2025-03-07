@@ -445,22 +445,23 @@
         };
 
         signos_programacion_derecha {
-    bindings = <
-        &trans &trans &trans &trans &trans &trans &kp EXCL &kp MINUS &kp UNDER &kp AT &kp TILDE &kp PERC
-        &trans &trans &trans &trans &trans &trans &kp PLUS &kp EQUAL &kp PIPE &kp AMPERSAND &kp ENIE &none
-        &trans &trans &trans &trans &trans &trans &kp ASTERISK &kp NUMERAL &kp SCOLON &kp COLON &kp SLASH &kp BACKSLASH
-        &trans &trans &trans &trans &trans &trans
-    >;
-};
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &signo_admiracion  &signo_menos  &guion_bajo      &arroba      &tilde            &por_ciento
+&trans  &trans  &trans  &trans  &trans  &trans    &signo_mas         &igual_que    &barra_vertical  &ampersand   &enie             &none
+&trans  &trans  &trans  &trans  &trans  &trans    &asterisco         &numeral      &punto_y_coma    &dos_puntos  &barra_inclinada  &barra_invertida
+                        &trans  &trans  &trans    &trans             &trans        &trans
+            >;
+        };
 
-signos_programacion_izquierda {
-    bindings = <
-        &kp QUES &kp GREATER &kp RBRC &kp RBRACE &kp RPAREN &none &trans &trans &trans &trans &trans &trans
-        &kp EXCL &kp LESS &kp LBRC &kp LBRACE &kp LPAREN &none &trans &trans &trans &trans &trans &trans
-        &kp TILDE &kp CARET &kp DOLLAR &kp DBLQUOT &kp SINGQUOT &kp GRAVE &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans
-    >;
-};
+        signos_programacion_izquierda {
+            bindings = <
+&cierra_signo_interrogacion  &mayor_que  &cierra_corchetes  &cierra_llaves    &cierra_parentesis  &none                 &trans  &trans  &trans  &trans  &trans  &trans
+&abre_signo_interrogacion    &menor_que  &abre_corchetes    &abre_llaves      &abre_parentesis    &none                 &trans  &trans  &trans  &trans  &trans  &trans
+&abre_signo_exclamacion      &pico       &signo_pesos       &comillas_dobles  &comilla_simple     &comilla_invertida    &trans  &trans  &trans  &trans  &trans  &trans
+                                                            &trans            &trans              &trans                &trans  &trans  &trans
+            >;
+        };
+
         dvorak {
             bindings = <
 &trans  &kp APOS  &kp COMMA  &kp DOT  &kp P             &kp Y     &kp F   &kp G    &kp C   &kp H  &kp L  &trans
@@ -480,4 +481,3 @@ signos_programacion_izquierda {
         };
     };
 };
-
