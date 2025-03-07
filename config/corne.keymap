@@ -445,23 +445,22 @@
         };
 
         signos_programacion_derecha {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &signo_admiracion  &signo_menos  &guion_bajo      &arroba      &tilde            &por_ciento
-&trans  &trans  &trans  &trans  &trans  &trans    &signo_mas         &igual_que    &barra_vertical  &ampersand   &enie             &none
-&trans  &trans  &trans  &trans  &trans  &trans    &asterisco         &numeral      &punto_y_coma    &dos_puntos  &barra_inclinada  &barra_invertida
-                        &trans  &trans  &trans    &trans             &trans        &trans
-            >;
-        };
+    bindings = <
+        &trans  &trans  &trans  &trans  &trans  &trans  &unicode <0x0021>  &unicode <0x2212>  &unicode <0x005F>  &unicode <0x0040>  &unicode <0x007E>  &unicode <0x0025>
+        &trans  &trans  &trans  &trans  &trans  &trans  &unicode <0x002B>  &unicode <0x003D>  &unicode <0x007C>  &unicode <0x0026>  &unicode <0x00F1>  &none
+        &trans  &trans  &trans  &trans  &trans  &trans  &unicode <0x002A>  &unicode <0x0023>  &unicode <0x003B>  &unicode <0x003A>  &unicode <0x002F>  &unicode <0x005C>
+                                &trans  &trans  &trans  &trans  &trans  &trans
+    >;
+};
 
-        signos_programacion_izquierda {
-            bindings = <
-&cierra_signo_interrogacion  &mayor_que  &cierra_corchetes  &cierra_llaves    &cierra_parentesis  &none                 &trans  &trans  &trans  &trans  &trans  &trans
-&abre_signo_interrogacion    &menor_que  &abre_corchetes    &abre_llaves      &abre_parentesis    &none                 &trans  &trans  &trans  &trans  &trans  &trans
-&abre_signo_exclamacion      &pico       &signo_pesos       &comillas_dobles  &comilla_simple     &comilla_invertida    &trans  &trans  &trans  &trans  &trans  &trans
-                                                            &trans            &trans              &trans                &trans  &trans  &trans
-            >;
-        };
-
+signos_programacion_izquierda {
+    bindings = <
+        &unicode <0x003F>  &unicode <0x003E>  &unicode <0x005D>  &unicode <0x007D>  &unicode <0x0029>  &none  &trans  &trans  &trans  &trans  &trans  &trans
+        &unicode <0x00BF>  &unicode <0x003C>  &unicode <0x005B>  &unicode <0x007B>  &unicode <0x0028>  &none  &trans  &trans  &trans  &trans  &trans  &trans
+        &unicode <0x00A1>  &unicode <0x005E>  &unicode <0x0024>  &unicode <0x0022>  &unicode <0x0027>  &unicode <0x0060>  &trans  &trans  &trans  &trans  &trans  &trans
+                                                    &trans  &trans  &trans  &trans  &trans  &trans
+    >;
+};
         dvorak {
             bindings = <
 &trans  &kp APOS  &kp COMMA  &kp DOT  &kp P             &kp Y     &kp F   &kp G    &kp C   &kp H  &kp L  &trans
