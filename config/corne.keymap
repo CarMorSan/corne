@@ -555,14 +555,14 @@
 
         android_derecha {
             bindings = <
-&trans  &kp APOS  &kp COMMA  &kp DOT  &kp P             &kp Y     &kp EXCLAMATION  &kp MINUS  &kp UNDERSCORE  &kp AT_SIGN    &kp TILDE      &kp PERCENT
-&trans  &kp A     &kp O      &kp E    &lt 4 U           &kp I     &kp PLUS         &kp EQUAL  &kp PIPE        &kp AMPERSAND  &kp SEMICOLON  &trans
-&trans  &kp SEMI  &kp Q      &kp J    &kp K             &kp X     &kp ASTERISK     &kp HASH   &kp SEMICOLON   &kp COLON      &kp SLASH      &kp NON_US_BACKSLASH
-                             &tog 6   &kp LEFT_BRACKET  &trans    &trans           &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp EXCLAMATION  &kp MINUS  &kp UNDERSCORE  &kp AT_SIGN    &kp TILDE  &kp PERCENT
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS         &kp EQUAL  &kp PIPE        &kp AMPERSAND  &kp RA(N)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK     &kp HASH   &kp SEMICOLON   &kp COLON      &kp SLASH  &kp NON_US_BACKSLASH
+                        &trans  &trans  &trans    &trans           &trans     &trans
             >;
         };
 
-        acento {
+        android_izquierda {
             bindings = <
 &trans  &trans  &trans  &trans  &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
